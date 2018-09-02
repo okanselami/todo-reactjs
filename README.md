@@ -1,3 +1,3 @@
-This Basic React todo project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) by okanselami
+This Basic React todo project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) by okanselami[okanselami](https://twitter.com/okanselami) 
 
 
