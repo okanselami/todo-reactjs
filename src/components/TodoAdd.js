@@ -6,21 +6,24 @@ class TodoAdd extends Component {
     super(props);
     this.state = {
       isEmpty: true,
-      list: [{ id: 0, todoItem: "Initial Item" }]
+      list: [{ id: 0, todoItem: "Initial Item" }],
+      isChecked: false
     };
   }
 
   handleSubmit = e => {
     e.preventDefault();
+    console.log(this);
     const value = this.inputNode.value;
     const newList = this.state.list;
 
-    newList.push({
-      id: newList.length,
-      todoItem: value
-    });
 
-    this.setState({ list: newList });
+    this.setState({
+      list: newList.concat({
+        id: newList.length,
+        todoItem: value
+      })
+    });
     this.inputNode.value = "";
   };
 
